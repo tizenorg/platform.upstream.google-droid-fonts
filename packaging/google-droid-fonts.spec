@@ -1,5 +1,5 @@
 %define _fontsdir               %{_datadir}/fonts
-%define _ttfontsdir             %{_fontsdir}/truetype
+%define _ttffontsdir            %{_fontsdir}/truetype
 %define _miscfontsdir           %{_fontsdir}/misc
 %define _fontsconfdir           %{_sysconfdir}/fonts
 %define _fontsconfddir          %{_fontsconfdir}/conf.d
@@ -35,8 +35,8 @@ http://www.ascendercorp.com/pr/2007-11-12/
 %build
 
 %install
-mkdir -p %{buildroot}%{_ttfontsdir}
-install -m 0644 *.ttf %{buildroot}%{_ttfontsdir}/
+mkdir -p %{buildroot}%{_ttffontsdir}
+install -m 0644 *.ttf %{buildroot}%{_ttffontsdir}/
 
 %post
 if [ -x %{_bindir}/fc-cache ]; then
@@ -51,5 +51,5 @@ fi
 %files
 %defattr(-,root,root)
 %license README.txt
-%{_ttfontsdir}
+%{_ttffontsdir}
 

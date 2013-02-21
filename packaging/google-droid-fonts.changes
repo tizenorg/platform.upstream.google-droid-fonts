@@ -1,3 +1,6 @@
+* Thu Feb 21 2013 Patrick McCarty <patrick.mccarty@linux.intel.com> 3156cde
+- Fix typo in _ttffontsdir macro
+
 * Thu Dec 13 2012 Anas Nashif <anas.nashif@intel.com> upstream/20121209@496107c
 - Initial import
 
