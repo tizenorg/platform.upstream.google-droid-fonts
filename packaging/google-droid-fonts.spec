@@ -13,6 +13,7 @@ Summary:        Fonts With Extensive Style and Language Support Developed for An
 Url:            http://www.ascendercorp.com/pr/2007-11-12/
 Group:          System/Fonts
 Source:         %{name}-%{version}.tar.xz
+Source1001: 	google-droid-fonts.manifest
 BuildArch:      noarch
 Requires(post): %{_bindir}/fc-cache
 
@@ -31,6 +32,7 @@ http://www.ascendercorp.com/pr/2007-11-12/
 
 %prep
 %setup -q
+cp %{SOURCE1001} .
 
 %build
 
@@ -49,6 +51,7 @@ if [ -x %{_bindir}/fc-cache ]; then
 fi
 
 %files
+%manifest %{name}.manifest
 %defattr(-,root,root)
 %license README.txt
 %{_ttffontsdir}
