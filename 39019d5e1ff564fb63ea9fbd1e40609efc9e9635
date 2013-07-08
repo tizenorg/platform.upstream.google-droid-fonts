@@ -1,0 +1,8 @@
+Change-Id: I39019d5e1ff564fb63ea9fbd1e40609efc9e9635
+Code-Review+2: Ryan Ware <ware@linux.intel.com>
+Verified+1: Ryan Ware <ware@linux.intel.com>
+Submitted-by: Ryan Ware <ware@linux.intel.com>
+Submitted-at: Mon, 08 Jul 2013 09:40:48 -0700
+Reviewed-on: https://review.tizen.org/gerrit/4737
+Project: platform/upstream/google-droid-fonts
+Branch: refs/heads/tizen
